@@ -155,6 +155,7 @@ final class EventListView: BaseView {
             titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -Constants.padding),
             titleLabel.topAnchor.constraint(equalTo: welcomeLabel.bottomAnchor)
         ])
+        titleLabel.accessibilityIdentifier = ElementId.EventsList.findEventText
     }
     
     private func setUpSearchFieldConstraints() {
@@ -193,8 +194,9 @@ final class EventListView: BaseView {
             addButton.topAnchor.constraint(equalTo: footerView.topAnchor, constant: Constants.spacing),
             addButton.bottomAnchor.constraint(equalTo: footerView.bottomAnchor, constant: -Constants.spacing),
             addButton.heightAnchor.constraint(equalToConstant: Constants.addButtonSize),
-            addButton.widthAnchor.constraint(equalToConstant: Constants.addButtonSize)
+            addButton.widthAnchor.constraint(equalToConstant: Constants.addButtonSize),
         ])
+        addButton.accessibilityIdentifier = ElementId.EventsList.addEventButton
     }
     
     private func setUpEventsButtonConstraints() {

@@ -298,6 +298,7 @@ final class EventFormView: BaseView {
         premiumEventTitleLabel.text = model.premiumSwitchTitle
         
         saveButton.setTitle(model.saveButtonTitle, for: .normal)
+        saveButton.accessibilityIdentifier = ElementId.NewEvent.saveButton
         cancelButton.setTitle(model.cancelButtonTitle, for: .normal)
         deleteButton.setTitle(model.deleteButtonTitle, for: .normal)
         
@@ -439,6 +440,7 @@ final class EventFormView: BaseView {
             eventTtitleTextField.topAnchor.constraint(equalTo: eventTitleLabel.bottomAnchor, constant: Constants.smallSpacing),
             eventTtitleTextField.heightAnchor.constraint(equalToConstant: .defaultControlHeight)
         ])
+        eventTtitleTextField.accessibilityIdentifier = ElementId.NewEvent.eventTitleTextField
     }
     
     private func setUpCategoryTitleLabelConstraints() {
@@ -457,6 +459,7 @@ final class EventFormView: BaseView {
             categoryDropdownField.trailingAnchor.constraint(equalTo: formView.trailingAnchor, constant: -.defaultPadding),
             categoryDropdownField.topAnchor.constraint(equalTo: categoryTitleLabel.bottomAnchor, constant: Constants.smallSpacing)
         ])
+        categoryDropdownField.accessibilityIdentifier = ElementId.NewEvent.chooseCategoryDropdown
     }
     
     private func setUpStartDateTitleLabelConstraints() {
@@ -478,6 +481,7 @@ final class EventFormView: BaseView {
             startDateTextField.topAnchor.constraint(equalTo: startDateTitleLabel.bottomAnchor, constant: Constants.smallSpacing),
             startDateTextField.heightAnchor.constraint(equalToConstant: .defaultControlHeight)
         ])
+        startDateTextField.accessibilityIdentifier = ElementId.NewEvent.startDateTextField
     }
     
     private func setUpEndDateTitleLabelConstraints() {
@@ -499,6 +503,7 @@ final class EventFormView: BaseView {
             endDateTextField.topAnchor.constraint(equalTo: endDateTitleLabel.bottomAnchor, constant: Constants.smallSpacing),
             endDateTextField.heightAnchor.constraint(equalToConstant: .defaultControlHeight)
         ])
+        endDateTextField.accessibilityIdentifier = ElementId.NewEvent.endDateTextField
     }
     
     private func setUpPriceTitleLabelConstraints() {
@@ -518,6 +523,7 @@ final class EventFormView: BaseView {
             priceTextField.topAnchor.constraint(equalTo: priceTitleLabel.bottomAnchor, constant: Constants.smallSpacing),
             priceTextField.heightAnchor.constraint(equalToConstant: .defaultControlHeight)
         ])
+        priceTextField.accessibilityIdentifier = ElementId.NewEvent.priceTextField
     }
     
     private func setUpPremiumEventSwitchConstraints() {
@@ -528,6 +534,7 @@ final class EventFormView: BaseView {
             premiumEventSwitch.topAnchor.constraint(equalTo: priceTextField.bottomAnchor, constant: Constants.smallSpacing),
             premiumEventSwitch.widthAnchor.constraint(equalToConstant: Constants.switchWidth)
         ])
+        premiumEventSwitch.accessibilityIdentifier = ElementId.NewEvent.premiumEventSwitch
     }
     
     private func setUpPremiumEventTitleLabelConstraints() {
