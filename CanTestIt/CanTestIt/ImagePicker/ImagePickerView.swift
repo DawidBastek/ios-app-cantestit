@@ -58,6 +58,7 @@ final class ImagePickerView: BaseView {
     
     private func fill(with model: Model) {
         chooseButton.setTitle(model.buttonTitle, for: .normal)
+        chooseButton.accessibilityIdentifier = ElementId.AddEvent.chooseButton
     }
     
     private func setUpViewHierarchy() {

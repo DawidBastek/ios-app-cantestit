@@ -48,6 +48,17 @@
                ReferencedContainer = "container:CanTestIt.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "91A13B2229F51DF100DBE775"
+               BuildableName = "CanTestItUITestsBandle.xctest"
+               BlueprintName = "CanTestItUITestsBandle"
+               ReferencedContainer = "container:CanTestIt.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
